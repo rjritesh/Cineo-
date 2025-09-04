@@ -20,7 +20,7 @@ Cineo is a smart movie recommendation platform that leverages AI to provide pers
 ![alt text](<public/App's Screenshots/Screenshot 2025-09-04 170420.png>)
 ![alt text](<public/App's Screenshots/Screenshot 2025-09-04 170450.png>) 
 ![alt text](<public/App's Screenshots/Screenshot 2025-09-04 170523.png>) 
-public/App's Screenshots/Screenshot 2025-09-04 170534.png 
+![alt text](<public/App's Screenshots/Screenshot 2025-09-04 170534.png>)
 
 ---
 
