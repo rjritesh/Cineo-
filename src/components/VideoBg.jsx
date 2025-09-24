@@ -11,16 +11,17 @@ const VideoBg = ({ movieId }) => {
     <div className="relative w-full">
       {/* Background Video */}
       <iframe
-        className="w-full aspect-video object-cover"
+        className="w-full aspect-video border-0" // remove frameBorder, use Tailwind
         src={
           "https://www.youtube.com/embed/" +
           trailerVideo?.key +
-          "?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
+          "?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
         }
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
         allowFullScreen
       ></iframe>
+
 
       {/* Dark overlay for readability */}
       <div className="absolute top-0 left-0 w-full h-full max-h-[100%] bg-gradient-to-b from-black/40 to-black/90 pointer-events-none"></div>
