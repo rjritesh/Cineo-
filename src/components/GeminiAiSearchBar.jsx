@@ -23,7 +23,7 @@ const GeminiAiSearchBar = () => {
     setLoading(true);
     setAiSuggestedMovie([]);
     const query = searchText.current.value.trim();
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "	gemini-2.0-flash-lite" });
 
     const prompt = `
       You are a movie recommendation system.
@@ -40,7 +40,7 @@ const GeminiAiSearchBar = () => {
     const promiseArray = responseText.map((movie) => tmdbSearchMovie(movie));
     const tmdbResults = await Promise.all(promiseArray);
     setAiSuggestedMovie(tmdbResults.flat());
-      
+
     setLoading(false);
   };
 

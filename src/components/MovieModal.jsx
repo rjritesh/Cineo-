@@ -81,14 +81,15 @@ const MovieModal = () => {
           </button>
           <iframe
             className="w-full max-w-4xl h-[60vh] sm:h-[70vh] md:h-[80vh]"
-            src={"https://www.youtube.com/embed/" +
+            src={
+              "https://www.youtube.com/embed/" +
               trailerVideo?.key +
               "?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
             }
             title="Trailer"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           />
+
         </div>
       )}
     </div>
